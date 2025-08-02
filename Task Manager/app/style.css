@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+body{
+    font-family: "Poppins";
+    margin: 0;
+    background-color: rgb(41, 41, 56);
+}
+
+.wrapper{
+    display: flex;
+    width: 100%;
+}
+
+#side_bar_main{
+    background-color: rgb(65, 74, 89);
+    position: sticky;
+    top: 0px;
+    padding: 10px;
+    width: 250px;
+    height: 600px;
+}
+#side_bar_main center h1{
+    cursor: default;
+    transition: 0.2s ease;
+}
+
+#side_bar_main center h1:hover{
+    transform: scale(1.08);
+    text-shadow: 0px 0px 30px rgb(121, 131, 147);
+}
+
+#side_bar_main center textarea{
+    display: flex;
+    text-wrap: wrap;
+    font-size: 20px;
+    font-family: "Poppins";
+    padding: 5px;
+    height: auto;
+    max-height: 450px;
+    overflow: visible;
+    width: 95%;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+    padding-bottom: 1px;
+}
+
+#side_bar_main center button{
+    user-select: none;
+    cursor: pointer;
+    padding: 0;
+    font-family: "Poppins";
+    width: 90%;
+    height: 50px;
+    margin: 10px;
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(112, 149, 163);
+    border: none;
+    border-radius: 30px;
+    transition: 0.2s ease;
+}
+
+#side_bar_main center button:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgb(121, 131, 147);
+}
+
+#side_bar_main center button:active{
+    transform: scale(1.15);
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+
+.block{
+    background-color: rgb(48, 55, 74);
+    width: 300px;
+    height: auto;
+    border: 0px;
+    border-radius: 10px;
+    color: white;
+    margin: 10px;
+    padding-bottom: 10px;
+    padding-inline: 8px;
+}
+
+.block p{
+    cursor: default;
+    max-width: 300px;
+    height: auto;
+    overflow-wrap: break-word;
+    font-size: 20px;
+    
+}
+.block div{
+    margin: 0;
+    margin-left: 3.8px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+}
+.block_checkbox{
+    opacity: 0;
+    cursor: pointer;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.block_div:has(.block_checkbox:checked){
+    background-color: rgb(118, 141, 163);
+}
+
+.block_btn{
+    user-select: none;
+    cursor: pointer;
+    font-family: "Poppins";
+    font-size: 20px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 0px;
+    background-color: white;
+    transition: 0.2s ease;
+}
+.block_btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px white;
+    background-color: rgb(133, 149, 164);
+}
+.block_btn:active{
+    transform: scale(1.2);
+}
+
+#block_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* garante alinhamento fixo à esquerda */
+    column-gap: 2px;  /* espaço horizontal */
+    row-gap: 8px;     /* espaço vertical */
+    padding: 5px;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
